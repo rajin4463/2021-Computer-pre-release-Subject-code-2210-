@@ -1,0 +1,90 @@
+#Task 1
+remaning_seats_9 = 0
+remaning_seats_11 = 0
+remaning_seats_13 = 0
+remaning_seats_15 = 0
+
+total_9 = 0
+total_11 = 0
+total_13 = 0
+total_15 = 0
+
+grand_total_9 = 0
+grand_total_11 = 0
+grand_total_13 = 0
+grand_total_15 = 0
+
+count_9 = 0; count_11 = 0; count_13 = 0; count_15 = 0
+x = 0
+
+while x == 0:
+
+	departher_time = int(input("Please enter departher time: "))
+
+	if departher_time < 9 or departher_time == 10 or departher_time == 12 or departher_time == 14 or departher_time > 15:
+		print("error")
+		print("Worng time")
+	if departher_time == 11:
+		print("Yes, we are available")
+		on_of_seats = int(input("Enter the number of seats: "))
+	
+		if on_of_seats <= 480:
+			total_11_payment = on_of_seats * 50 
+			total_11 = on_of_seats
+			grand_total_11 = grand_total_11 + total_11
+			remaning_seats_11 = 480 - on_of_seats
+			count_11 = count_11 + on_of_seats
+			print("Total people leaving from the foot of the mountain at 11:00 is", total_11); print("Total payment in $:", total_11_payment)
+			print("Remaning seats", remaning_seats_11)
+			x = 1
+
+	if departher_time == 13:
+		print("Yes, we are available")
+		on_of_seats = int(input("Enter the number of seats: "))
+	
+		if on_of_seats <= 480:
+			total_13_payment = on_of_seats * 50 
+			total_13 = on_of_seats
+			grand_total_13 = grand_total_13 + total_13
+			remaning_seats_13 = 480 - on_of_seats
+			count_13 = count_13 + on_of_seats
+			print("Total people leaving from the foot of the mountain at 13:00 is", total_13); print("Total payment in $:", total_13_payment)
+			print("Remaning seats", remaning_seats_13)
+			x = 1
+		else:
+			print("Sorry only 480 seats available, try again")
+			x = 0
+
+	if departher_time == 9:
+		print("Yes, we are available")
+		on_of_seats = int(input("Enter the number of seats: "))
+
+		if on_of_seats <= 480:
+			total_9_payment = on_of_seats * 50 
+			total_9 = on_of_seats
+			grand_total_9 = grand_total_9 + total_9
+			remaning_seats_9 = 480 - on_of_seats
+			count_9 = count_9 + on_of_seats
+			print("Total people leaving from the foot of the mountain at 09:00 is", total_9); print("Total payment in $:", total_9_payment)
+			print("Remaning seats", remaning_seats_9)
+			x = 1
+		else:
+			print("Sorry only 480 seats available, try again")
+			x = 0
+
+	if departher_time == 15:
+		print("Yes, we are available")
+		on_of_seats = int(input("Enter the number of seats: "))
+	
+		if on_of_seats <= 480:
+			total_15_payment = on_of_seats * 50 
+			total_15 = on_of_seats
+			grand_total_15 = grand_total_15 + total_15
+			remaning_seats_15 = 480 - on_of_seats
+			count_15 = count_15 + on_of_seats
+			print("Total people leaving from the foot of the mountain at 15:00 is", total_15); print("Total payment in $:", total_15_payment)
+			print("Remaning seats", remaning_seats_15)
+			x = 1
+		else:
+			print("Sorry only 480 seats available, try again")
+			x = 0
